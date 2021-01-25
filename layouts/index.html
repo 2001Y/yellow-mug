@@ -5,32 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YellowMug</title>
   <link rel="stylesheet" href="style.min.css">
-  <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
 </head>
 <body>
-  <h1>YellowMug</h1>
-  <p>
-    MARIN & YOSHIKI’s Art unit “Yellow Mug”! 🐝🐝🐝🐝🐝
-    武蔵野美術大学クリエイティブイノベーション学科のMarinとYoshikiによって生まれたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！
-    一緒に本気で遊んでみよう！！！
-  </p>
-  <h2>ページ</h2>
+  <a href="/">
+    <h1>{{.Site.Title}}</h1>
+  </a>
   <ul>
     {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
-  
+  {{ .Content }}
 </body>
-<!-- <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script> -->
 </html>

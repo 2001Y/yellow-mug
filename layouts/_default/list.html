@@ -1,9 +1,22 @@
-<h1>YellowMug</h1>
-<h2>{{.Title}}</h2>
-{{ .Content }} 
+<a href="/">
+    <h1>{{.Site.Title}}</h1>
+</a>
 
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+
+{{ with .CurrentSection }}
+  <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </ul>
+{{ end }}
+
+{{ .Content }}
+<ul>
 {{ range .Pages }}
 <li>
     <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
 </li>
 {{ end }}
+</ul>

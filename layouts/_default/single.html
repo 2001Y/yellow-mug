@@ -1,3 +1,14 @@
-<h1>YellowMug</h1>
-<h2>{{.Title}}</h2>
+<a href="/">
+    <h1>{{ .Site.Title }}</h1>
+</a>
+<h2>{{ .Section }}</h2>
+<h2>{{ .Title }}</h2>
 {{ .Content }} 
+
+{{ with .CurrentSection }}
+  <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </ul>
+{{ end }}
