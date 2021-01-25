@@ -4,7 +4,7 @@ backend:
 collections:
   - label: "About" # 管理画面のサイドバーで使う
     name: "about" # 管理画面のパスで使う　例：/admin/collections/blog
-    folder: "about" # Markdownを保存するディレクトリ。Hugoのsectionにあたる
+    folder: "content/about" # Markdownを保存するディレクトリ。Hugoのsectionにあたる
     create: true # 新しいページを作ることを許可する
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
     fields: # ページ作成画面で使う。Front Matterの値を書く
