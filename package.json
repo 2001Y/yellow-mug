@@ -1,21 +1,13 @@
 {
-  "name": "2001y.me",
+  "name": "site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/2001Y/2001Y.me.git"
-  },
-  "author": "2001Y",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/2001Y/2001Y.me/issues"
-  },
-  "homepage": "https://github.com/2001Y/2001Y.me#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
