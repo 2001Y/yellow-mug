@@ -14,6 +14,13 @@
     武蔵野美術大学クリエイティブイノベーション学科のMarinとYoshikiによって生まれたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！
     一緒に本気で遊んでみよう！！！
   </p>
+  <h2>ページ</h2>
+  <ul>
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </ul>
+  
 </body>
 <!-- <script>
   if (window.netlifyIdentity) {
