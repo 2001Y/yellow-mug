@@ -1,6 +1,6 @@
 ---
 title: About
-date: 2021-01-25T16:36:34.516Z
+date: 2021-01-26T03:40:11.026Z
 ---
 遊び心ある感じにしたい！
 手書き文字とか絵を入れたり、クリックすると何か出てきたり
@@ -22,10 +22,10 @@ date: 2021-01-25T16:36:34.516Z
 🤍F2F2F2
 （💛🖤🤍人種の壁を超えてクリエイティブを届けたい。）←もっとかっこいい言葉で…
 
-Theme song
+### Theme song
 [“Goodbye Yellow Brick Road”](youtube.com) - Elton John →音楽を流す
 
-About us自分達の自己紹介
+### About us
 
 * MARIN 
   武蔵野大学クリエイティブイノベーション学科1年
