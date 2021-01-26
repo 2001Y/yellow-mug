@@ -9,7 +9,7 @@ collections:
     create: true # 新しいページを作ることを許可する
     slug: "{{slug}}" #ファイル名になる
     preview_path: blog/{{slug}}
-    show_preview_links: true
+    show_preview_links: false
     fields: # ページ作成画面で使う。Front Matterの値を書く
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "公開日", name: "date", widget: "datetime"}
@@ -20,10 +20,9 @@ collections:
     create: true # 新しいページを作ることを許可する
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
     preview_path: blog/{{slug}}
-    show_preview_links: true
+    show_preview_links: false
     fields: # ページ作成画面で使う。Front Matterの値を書く
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "公開日", name: "date", widget: "datetime"}
       - {label: "本文", name: "body", widget: "markdown"}
-publish_mode: editorial_workflow
 media_folder: "static/images"
