@@ -2,7 +2,7 @@
 title: "🧱Goodbye Our Yellow Brick "
 date: 2021-01-26T03:27:06.788Z
 css: "yellow-brick"
-mainAfter: '<iframe src="https://www.youtube.com/embed/IwWFT0AEr1A?autoplay=1&loop=1&controls=0&disablekb=1?&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"id=bg></iframe>'
+mainAfter: '<iframe src="https://www.youtube.com/embed/IwWFT0AEr1A?autoplay=1&loop=1&controls=0&disablekb=1?&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id=bg></iframe>'
 ---
 <div class=youtube>
 <iframe src="https://www.youtube.com/embed/IwWFT0AEr1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
