@@ -1,22 +1,20 @@
-<a href="/">
-    <h1>{{.Site.Title}}</h1>
-</a>
-
-<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-
-{{ with .CurrentSection }}
-  <ul>
+<!doctype html>
+<html>
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main>
+    {{ .Content }}
+    <ul>
     {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <li>
+      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+    </li>
     {{ end }}
-  </ul>
-{{ end }}
-
-{{ .Content }}
-<ul>
-{{ range .Pages }}
-<li>
-    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-</li>
-{{ end }}
-</ul>
+    </ul>
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,14 +1,38 @@
-<a href="/">
-    <h1>{{ .Site.Title }}</h1>
-</a>
-<h2>{{ .Section }}</h2>
-<h2>{{ .Title }}</h2>
-{{ .Content }} 
-
-{{ with .CurrentSection }}
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+<!doctype html>
+<html>
+<head>
+  {{ partial "head.html" . }}
+  <link rel="stylesheet" href="/single.min.css?20210203">
+  <script async src=/lb.min.js></script>
+  {{ if .Params.css }}
+    <link rel=stylesheet href=/{{ .Params.css }}.min.css?20210203>
+  {{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main>
+    <span id=SubTitle>{{ .Section }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }} 
+    <h2>Other works <small>その他の作品</small></h2>
+    {{ with .CurrentSection }}
+      <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+      </ul>
     {{ end }}
-  </ul>
-{{ end }}
+  </main>
+  <picture id=lightbox class=close onclick=lbClose()>
+    <source type=image/webp alt=lightbox id=lightbox-webp>
+    <img alt=lightbox id=lightbox-jpeg>
+    <figcaption id=lightbox-figcaption></figcaption>
+  </picture>
+  <div id="Top"></div>
+  <div id="Bottom"></div>
+  {{ if .Params.mainAfter }}
+    {{ .Params.mainAfter | safeHTML }}
+  {{ end }}
+  {{ partial "footer.html" . }}
+</body>
+</html>

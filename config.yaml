@@ -1,0 +1,10 @@
+baseURL: http://example.org/
+languageCode: ja
+hasCJKLanguage: true
+title: YellowMug
+params:
+  description: 武蔵野美術大学クリエイティブイノベーション学科のまりんとよしきによって生まれたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

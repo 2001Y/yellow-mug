@@ -1,0 +1,21 @@
+<div class="gallery">
+{{ range .Params }}
+  {{ $arg := split . ":" }}
+  {{ $name := index $arg 0 }}
+  {{ $icon := index $arg 1 }}
+  {{ $img := $name | printf "/static/img/%s-560.jpg" }}
+  {{ $imgData := imageConfig $img }}
+
+  <picture data-original=/img/{{ printf $name }} data-figcaption="{{ printf $icon }}">
+    <source srcset="/img/{{ printf $name }}-560.webp, /img/{{ printf $name }}-1120.webp 2x,/img/{{ printf $name }}-1680.webp 3x" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+    <img src="/img/{{ printf $name }}.jpg" srcset="/img/{{ printf $name }}-1120.jpg 2x,/img/{{ printf $name }}-1680.jpg 3x" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+  </picture>
+
+  <picture data-original=/img/{{ printf $name }}-brik data-figcaption="{{ printf $icon }}">
+    <source srcset="/img/{{ printf $name }}-brik-560.webp" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+    <img src="/img/{{ printf $name }}-brik.jpg" srcset="/img/{{ printf $name }}-brik-1120.jpg 2x,/img/{{ printf $name }}-brik-1680.jpg 3x" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+  </picture>
+
+
+{{ end }}
+</div>

@@ -25,9 +25,15 @@ exports.img = () =>
     src('images/*.{png,jpeg,jpg,JPG,gif}')
         .pipe(changed('static/img'))
         .pipe(imagemin([
-            jpeg({ quality: 80 }),
-            png(),
-            gif()
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 80, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
         ]))
         .pipe(responsive({
             // '*.{png,gif}': [{}],

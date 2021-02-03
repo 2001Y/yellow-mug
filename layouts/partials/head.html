@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="">
+<meta property="og:image" content="" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Site.Title }}" />
+{{ else }}
+    <title>{{ .Title }}｜{{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }}｜{{ .Site.Title }}" />
+{{ end }}
+{{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    <meta property="og:description" content="{{ .Description }}">
+{{ else if .IsHome }}
+    <meta name="description" content="{{ $.Site.Params.description }}">
+    <meta property="og:description" content="{{ $.Site.Params.description }}">
+{{ else }}
+    <meta name="description" content="{{ .Summary }}">
+    <meta property="og:description" content="{{ .Summary }}">
+{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="">
+<link rel="stylesheet" href="/base.min.css?20210203">
+{{ hugo.Generator }}
