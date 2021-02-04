@@ -5,6 +5,7 @@ uglyurls: true
 title: YellowMug
 params:
   description: 武蔵野美術大学クリエイティブイノベーション学科のまりんとよしきによって生まれたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！
+  uglyURLs: true
 markup:
   goldmark:
     renderer:
