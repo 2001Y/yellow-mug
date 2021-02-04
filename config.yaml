@@ -1,6 +1,7 @@
 baseURL: https://yellow-mug.com/
 languageCode: ja
 hasCJKLanguage: true
+uglyurls: true
 title: YellowMug
 params:
   description: 武蔵野美術大学クリエイティブイノベーション学科のまりんとよしきによって生まれたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！
