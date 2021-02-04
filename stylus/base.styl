@@ -74,6 +74,7 @@ button,input,optgroup,select,textarea
   appearance radio
 button,input
   overflow visible
+  display block
 button,select
   text-transform none
 button,[type="button"],[type="reset"],[type="submit"]
@@ -135,13 +136,18 @@ body
 nav
   ul
     display flex
-  li
-    padding 0 1rem
+    justify-content flex-end
+  li+li
+    margin-left 2rem
 h1,h2,h3,h4,h5,h6
   font-weight bold
   font-feature-settings "palt"
   small
     font-size .4em
+h1
+  font-size 4rem
+  margin-top 1rem
+  margin-bottom 3rem
 h2
   font-size 3rem
   margin-top 3rem
@@ -161,10 +167,31 @@ header
   display flex
   justify-content space-between
   align-items: center;
+  position fixed
+  top 0
+  width 100vw
+  z-index 999999
+  backdrop-filter: blur(50px);
+  // background rgba(0, 0, 0, .5)
+  #back
+    flex 1
+  #logo
+    flex 2
+    text-align center
+    &:before
+      content ""
+      display: inline-block;/*忘れずに！*/
+      width 2em
+      height 1em
+      background: url(/logo.png) no-repeat center
+      background-size: contain;
+      vertical-align sub
+  nav
+    flex 1
 main
   max-width 1000px
   padding 1.5rem
-  margin auto
+  margin 9rem auto 0 auto
   p
     letter-spacing .1em
     line-height 1.7em

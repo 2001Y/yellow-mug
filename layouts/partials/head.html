@@ -27,5 +27,8 @@
 {{ end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="">
-<link rel="stylesheet" href="/base.min.css?20210203">
 {{ hugo.Generator }}
+<link rel="stylesheet" href="/base.min.css?20210203">
+{{ if .Params.css }}
+<link rel=stylesheet href=/{{ .Params.css }}.min.css?20210203>
+{{ end }}

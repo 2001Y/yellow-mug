@@ -1,6 +1,7 @@
 body
   background #000
   color #fff
+  
 #bg
   position fixed
   top 50%
@@ -11,8 +12,22 @@ body
   @media ( min-aspect-ratio: 16/9 )
     width: 100vw;
     height: 56.25vw;
-  // z-index -9999
+  z-index -9999
   opacity .5
   pointer-events none
   filter: blur(12px);
-  
+.comment
+  column-count: 4;
+  column-fill: auto;
+  @media (max-width: 600px)
+    column-count: 4;
+    column-fill: auto;
+  img
+    width 100%
+    height auto
+    padding .5rem 0
+    transition opacity .3s
+    will-change opacity
+    cursor: zoom-in;
+    &:hover
+      opacity .7

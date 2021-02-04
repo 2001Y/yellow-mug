@@ -6,11 +6,15 @@
 <body>
   {{ partial "header.html" . }}
   <main>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
     <ul>
     {{ range .Pages }}
     <li>
-      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      <a href="{{.Permalink}}">
+        <h2>{{.Title}}</h2>
+        <time>{{.Date.Format "2006-01-02"}}</time>
+      </a>
     </li>
     {{ end }}
     </ul>

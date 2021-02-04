@@ -1,0 +1,15 @@
+<div class="comment">
+{{ range .Params }}
+  {{ $arg := split . ":" }}
+  {{ $name := index $arg 0 }}
+  {{ $icon := index $arg 1 }}
+  {{ $img := $name | printf "/static/img/%s-560.jpg" }}
+  {{ $imgData := imageConfig $img }}
+
+  <picture data-original=/img/{{ printf $name }}-comment data-figcaption="{{ printf $icon }}">
+    <source srcset="/img/{{ printf $name }}-comment-560.webp" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+    <img src="/img/{{ printf $name }}-comment.jpg" srcset="/img/{{ printf $name }}-comment-1120.jpg 2x,/img/{{ printf $name }}-comment-1680.jpg 3x" width={{ $imgData.Width }} height={{ $imgData.Height }} decoding=async loading=lazy type=image/webp>
+  </picture>
+
+{{ end }}
+</div>

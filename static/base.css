@@ -150,6 +150,7 @@ textarea {
 button,
 input {
   overflow: visible;
+  display: block;
 }
 
 button,
@@ -277,10 +278,11 @@ body {
 
 nav ul {
   display: flex;
+  justify-content: flex-end;
 }
 
-nav li {
-  padding: 0 1rem;
+nav li+li {
+  margin-left: 2rem;
 }
 
 h1,
@@ -300,6 +302,12 @@ h4 small,
 h5 small,
 h6 small {
   font-size: 0.4em;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -327,12 +335,42 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999999;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+header #back {
+  flex: 1;
+}
+
+header #logo {
+  flex: 2;
+  text-align: center;
+}
+
+header #logo:before {
+  content: "";
+  display: inline-block;
+  /*忘れずに！*/
+  width: 2em;
+  height: 1em;
+  background: url("/logo.png") no-repeat center;
+  background-size: contain;
+  vertical-align: sub;
+}
+
+header nav {
+  flex: 1;
 }
 
 main {
   max-width: 1000px;
   padding: 1.5rem;
-  margin: auto;
+  margin: 9rem auto 0 auto;
 }
 
 main p {

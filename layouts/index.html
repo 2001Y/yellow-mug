@@ -4,7 +4,23 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  {{ partial "header.html" . }}
+  <header>
+    <a href="/" id=back></a>
+    <a href="/" id=logo>
+      {{ if .IsHome }}
+        <h1>{{.Site.Title}}</h1>
+      {{ else }}
+        {{.Site.Title}}
+      {{ end }}
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/works/">Works</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+    </nav>
+  </header>
   <main>
     {{ .Content }}
   </main>

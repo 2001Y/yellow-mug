@@ -1,5 +1,8 @@
 <header>
-  <a href="/">
+  <a href="/" id=back>
+    < Back
+  </a>
+  <a href="/" id=logo>
     {{ if .IsHome }}
       <h1>{{.Site.Title}}</h1>
     {{ else }}
@@ -8,9 +11,9 @@
   </a>
   <nav>
     <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/works/">Works</a></li>
+      <li><a href="/contact/">Contact</a></li>
+  </ul>
   </nav>
 </header>
