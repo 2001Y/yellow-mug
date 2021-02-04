@@ -3,7 +3,7 @@ title: "Contact"
 date: 2021-01-25T18:48:21+09:00
 css: "contact"
 ---
-<form name="contact" method="POST" data-netlify="true" action="/contact">
+<form name="contact" method="POST" data-netlify="true" action="/contact/done">
     <label>
     <h2>Name</h2>
     <input type="text" name="name" placeholder="Your Name" id="name"/>
