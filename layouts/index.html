@@ -4,23 +4,8 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    <a href="/" id=back></a>
-    <a href="/" id=logo>
-      {{ if .IsHome }}
-        <h1>{{.Site.Title}}</h1>
-      {{ else }}
-        {{.Site.Title}}
-      {{ end }}
-    </a>
-    <nav>
-      <ul>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/works/">Works</a></li>
-        <li><a href="/contact/">Contact</a></li>
-    </ul>
-    </nav>
-  </header>
+  {{ partial "header.html" . }}
+  <div id="load"><span>MARIN<br>&<br>YOSHIKI</span></div>
   <main>
     {{ .Content }}
   </main>

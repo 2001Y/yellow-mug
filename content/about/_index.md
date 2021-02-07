@@ -6,29 +6,52 @@ date: 2021-01-26T11:46:25.652Z
 手書き文字とか絵を入れたり、クリックすると何か出てきたり
 2人の写真いろんなパターンで
 
-### Yellow Mug
+## Yellow Mug
 
-私たちのファーストアートワーク***“Goodbye Our Yellow Brick”***から、“Yellow”をユニットのテーマカラーとしました。
-また、Marin & Yoshiki は毎日必ず紅茶を飲みます♪私たちの近くにはいつも“Mug”があるのです。
-そうして生まれたユニット名が“Yellow Mug”なのです！
+私たちのファーストアートワーク*“Goodbye Our Yellow Brick”*から、“Yellow”をユニットのテーマカラーとしました。
+
+また、Marin & Yoshiki は毎日必ず紅茶を飲みます♪私たちの近くにはいつも“Mug”があるのです。そうして生まれたユニット名が“Yellow Mug”なのです！
+
 "Yellow Mug"には"Y"と"M"! そう、Yoshiki, Marinのイニシャルが隠れています！
 
-### Theme Color
+## Theme Color
 
-💛🖤🤍→カラーを持ってる写真
-💛FFEA02
+### 💛FFEA02
+
 私たちのイチバンのテーマカラー“Yellow”! ファーストアートワーク“Goodbye Our Yellow Brick”から”Yellow”は私たちにとって大切なカラーとなりました。
-🖤121212
-🤍F2F2F2
+
+### 🖤121212・🤍F2F2F2
+
 （💛🖤🤍人種の壁を超えてクリエイティブを届けたい。）←もっとかっこいい言葉で…
 
-### Theme song
+## Theme song
 
-[“Goodbye Yellow Brick Road”](youtube.com) - Elton John →音楽を流す
+“Goodbye Yellow Brick Road” - Elton John
 
-### About us
+## About us
 
-* MARIN 
-  武蔵野大学クリエイティブイノベーション学科1年
-* YOSHIKI 
-  武蔵野大学クリエイティブイノベーション学科1年
+
+{{< flex >}}
+{{< div >}}
+### 田辺麻鈴
+
+武蔵野美術大学<br>
+クリエイティブイノベーション学科1年
+
+[<i class="fab fa-instagram"></i>](https://instagram.com/humming.marin.bird)[<i class="fab fa-twitter"></i>](https://twitter.com/song_marin_bird)
+
+<img src="/marin.jpg" alt="">
+{{< /div >}}
+
+{{< div >}}
+### 田村義希
+
+武蔵野美術大学<br>
+クリエイティブイノベーション学科1年
+
+[<i class="fab fa-instagram"></i>](https://21y.in/insta)[<i class="fab fa-twitter"></i>](https://21y.in/tw)
+
+<img src="/yoshiki.JPG" alt="">
+{{< /div >}}
+{{< /flex >}}
+

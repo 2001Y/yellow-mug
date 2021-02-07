@@ -56,6 +56,7 @@ sup
   top -0.5em
 img,embed,object,iframe
   vertical-align bottom
+  max-width 100%
 button,input,optgroup,select,textarea
   -webkit-appearance none
   appearance none
@@ -131,8 +132,13 @@ th
 template,[hidden],select-ms-expand
   display none
 
+
+
 body
   font-family Helvetica,"游ゴシック Medium","Yu Gothic",YuGothic,-apple-system,Verdana,Meiryo
+  --y #FFEA02
+  --b #121212
+  --w #F2F2F2
 nav
   ul
     display flex
@@ -145,7 +151,7 @@ h1,h2,h3,h4,h5,h6
   small
     font-size .4em
 h1
-  font-size 4rem
+  font-size 5rem
   margin-top 1rem
   margin-bottom 3rem
 h2
@@ -153,11 +159,11 @@ h2
   margin-top 3rem
   margin-bottom 2rem
 h3
-  font-size 3rem
-  margin-top 3rem
-  margin-bottom 2rem
-h4
   font-size 2rem
+  margin-top 2rem
+  margin-bottom 1rem
+h4
+  font-size 1.5rem
   margin-top 2rem
   margin-bottom 1rem
 header
@@ -170,7 +176,7 @@ header
   position fixed
   top 0
   width 100vw
-  z-index 999999
+  z-index 9
   backdrop-filter: blur(50px);
   // background rgba(0, 0, 0, .5)
   #back
@@ -220,3 +226,14 @@ footer
     opacity .8
   span
     opacity .5
+
+.fab
+  font-size 2rem
+  margin-right .5rem
+
+.flex
+  display flex
+  >*
+    width 50%
+  >*+*
+    margin-left 2%
