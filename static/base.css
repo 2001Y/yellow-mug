@@ -431,9 +431,42 @@ footer span {
   margin-left: 2%;
 }
 
+#gallery,
+.comment {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-fill: auto;
+       column-fill: auto;
+}
+
+#gallery img,
+.comment img {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  transition: opacity 0.3s;
+  will-change: opacity;
+  cursor: zoom-in;
+}
+
+#gallery img:hover,
+.comment img:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 900px) {
   .youtube {
     width: 100%;
     padding-bottom: 56.25%;
+  }
+}
+
+@media (max-width: 600px) {
+  #gallery,
+  .comment {
+    -moz-column-count: 4;
+         column-count: 4;
+    -moz-column-fill: auto;
+         column-fill: auto;
   }
 }

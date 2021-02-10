@@ -32,4 +32,7 @@
 {{ if .Params.css }}
 <link rel=stylesheet href=/{{ .Params.css }}.min.css?20210203>
 {{ end }}
+{{ if .Params.js }}
+<script async src=/{{ .Params.js }}.min.js?20210203></script>
+{{ end }}
 <script src="https://kit.fontawesome.com/657e036f7a.js" crossorigin="anonymous"></script>
