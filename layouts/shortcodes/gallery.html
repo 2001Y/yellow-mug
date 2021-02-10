@@ -1,37 +1,20 @@
 <section id="gallery">
-   {{- $.Page.Scratch.Add "figurecount" 1 }}
-   {{ $baseURL := .Site.BaseURL }}
-
-      {{- with (.Get "dir") -}}
-         <!-- If a directory was specified, generate figures for all of the images in the directory -->
-         {{- $files := readDir (print "/static/" .) }}
-         {{- range $files -}}
-            <!-- skip files that aren't images, or that inlcude the thumb suffix in their name -->
-            {{- $thumbext := $.Get "thumb" | default "-thumb" }}
-            {{- $isthumb := .Name | findRE ($thumbext | printf "%s\\.") }}<!-- is the current file a thumbnail image? -->
-            {{- $isimg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}<!-- is the current file an image? -->
-            {{- if and $isimg (not $isthumb) }}
-               {{- $caption :=  .Name | replaceRE "\\..*" "" | humanize }}<!-- humanized filename without extension -->
-               {{- $linkURL := print $baseURL ($.Get "dir") "/" .Name | absURL }}<!-- absolute URL to hi-res image -->
-               {{- $thumb := .Name | replaceRE "(\\.)" ($thumbext | printf "%s.") }}<!-- filename of thumbnail image -->
-               {{- $thumbexists := where $files "Name" $thumb }}<!-- does a thumbnail image exist? --> 
-               {{- $thumbURL := print $baseURL ($.Get "dir") "/" $thumb | absURL }}<!-- absolute URL to thumbnail image -->
-               <picture data-original={{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}>
-                  <img src="{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}" alt="{{ $caption }}" />
-                  <p>{{ $caption }}</p>
-                  <a href="{{ $linkURL }}" itemprop="contentUrl"></a>
-                </picture>
-            {{- end }}
-         {{- end }}
-      {{- else -}}
-         <!-- If no directory was specified, include any figure shortcodes called within the gallery -->
-      {{ .Inner }}
-      {{- end }}
+   {{ $.Page.Scratch.Add "figurecount" 1 }}
+   {{ with (.Get "dir") -}}
+      {{ $files := readDir (print "/static/" .) }}
+      {{ range $files -}}
+         {{ $caption := .Name | replaceRE "\\..*" "" | humanize }}
+         {{ $linkURL := print ($.Get "dir") "/" .Name | absURL }}
+         <picture data-original={{ $linkURL }}>
+            <img src={{ $linkURL }} alt="{{ $caption }}" decoding=async loading=lazy>
+         </picture>
+      {{ end }}
+   {{ end }}
 </section>
 <picture id=lightbox class=close onclick=lbClose()>
    <source type=image/webp alt=lightbox id=lightbox-webp>
    <img alt=lightbox id=lightbox-jpeg>
    <figcaption id=lightbox-figcaption></figcaption>
- </picture>
- <div id="Top"></div>
- <div id="Bottom"></div>
+</picture>
+<div id="Top"></div>
+<div id="Bottom"></div>
