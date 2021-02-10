@@ -15,6 +15,8 @@ p,table,blockquote,address,pre,iframe,form,figure,dl,h1,h2,h3,h4,h5,h6
   font-size inherit
   line-height inherit
   font-weight inherit
+li a
+  display block
 ul,ol
   list-style none
 dt
@@ -133,18 +135,33 @@ template,[hidden],select-ms-expand
   display none
 
 
-
+:root
+  @media (max-width: 600px)
+    font-size 12px
 body
   font-family Helvetica,"游ゴシック Medium","Yu Gothic",YuGothic,-apple-system,Verdana,Meiryo
-  --y #FFEA02
-  --b #121212
-  --w #F2F2F2
-nav
+  --y #FCDA01
+  --b #000
+  --w #fff
+a:hover
+  color var(--y)
+#nav
+  text-align right
+  a
+    padding .6rem
+    display block
+    &:hover
+      color var(--b)
   ul
+    text-align left
     display flex
     justify-content flex-end
+  li:hover
+    background var(--y)
+    color var(--b)
   li+li
-    margin-left 1.5rem
+    margin-left .3rem
+
 h1,h2,h3,h4,h5,h6
   font-weight bold
   font-feature-settings "palt"
@@ -180,10 +197,20 @@ header
   backdrop-filter: blur(50px);
   // background rgba(0, 0, 0, .5)
   #back
-    flex 1
-  #logo
     flex 2
+    a
+      background var(--b)
+      color var(--w)
+      padding .6rem
+      &:hover
+        background var(--y)
+        color var(--b)
+  #logo
+    flex 1
     text-align center
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &:before
       content ""
       display: inline-block;/*忘れずに！*/
@@ -192,8 +219,8 @@ header
       background: url(/logo.png) no-repeat center
       background-size: contain;
       vertical-align sub
-  nav
-    flex 1
+  #nav
+    flex 2
 main
   max-width 1000px
   padding 1.5rem
@@ -202,6 +229,40 @@ main
     letter-spacing .1em
     line-height 1.7em
     margin-bottom 1rem
+
+#menu,#menu+label
+  display none
+#menu+label
+  background var(--b)
+  color var(--w)
+  padding .56rem
+  &:hover
+    background var(--y)
+    color var(--b)
+@media (max-width: 1500px)
+  #menu+label
+    display inline-block
+  nav
+    height 100vh
+    width: 80vw;
+    background var(--w)
+    position fixed
+    right -80vw
+    top 5rem
+    transition .3s
+  #nav
+    ul
+      flex-direction: column;
+    a
+      padding 1rem
+    li+li
+      margin 0
+      border-top solid .3rem var(--b)
+  #menu:checked ~ nav
+    display block
+    left auto
+    right 0
+
 .youtube
   margin auto
   width 80%

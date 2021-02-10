@@ -25,4 +25,15 @@ collections:
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "公開日", name: "date", widget: "datetime"}
       - {label: "本文", name: "body", widget: "markdown"}
+  - label: "News" # 管理画面のサイドバーで使う
+    name: "news" # 管理画面のパスで使う　例：/admin/collections/blog
+    folder: "content/news" # Markdownを保存するディレクトリ。Hugoのsectionにあたる
+    create: true # 新しいページを作ることを許可する
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
+    preview_path: blog/{{slug}}
+    show_preview_links: false
+    fields: # ページ作成画面で使う。Front Matterの値を書く
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "公開日", name: "date", widget: "datetime"}
+      - {label: "本文", name: "body", widget: "markdown"}
 media_folder: "static/images"

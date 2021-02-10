@@ -1,9 +1,11 @@
 <header>
-  <a href="{{ path.Dir .RelPermalink }}" id=back>
+  <section id="back">
     {{ if not .IsHome }}
-    < Back
+    <a href="{{ path.Dir .RelPermalink }}">
+      < BACK
+    </a>
     {{ end }}
-  </a>
+  </section>
   <a href="/" id=logo>
     {{ if .IsHome }}
       <h1>{{.Site.Title}}</h1>
@@ -11,19 +13,27 @@
       {{.Site.Title}}
     {{ end }}
   </a>
-  <nav>
-    <ul>
-      {{ if .Site.IsServer }}
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/works.html">Works</a></li>
-        <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      {{ else }}
-        <li><a href="/about">About</a></li>
-        <li><a href="/works">Works</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/contact">Contact</a></li>
-      {{ end }}
-    </ul>
-  </nav>
+  <section id=nav>
+    <input type="checkbox" id=menu>
+    <label for=menu>MENU</label>
+    <nav>
+      <ul>
+        {{ if .Site.IsServer }}
+          <li><a href="/">Top</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/works.html">Works</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        {{ else }}
+          <li><a href="/">Top</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/works">Works</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/contact">Contact</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </section>
 </header>

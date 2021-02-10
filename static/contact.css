@@ -1,3 +1,8 @@
+body {
+  background: var(--b);
+  color: var(--w);
+}
+
 main {
   max-width: 700px;
 }
@@ -12,7 +17,7 @@ input,
 textarea {
   padding: 1rem;
   width: 100%;
-  border: solid 0.3rem #000;
+  border: solid 0.3rem var(--w);
 }
 
 button {
@@ -20,12 +25,18 @@ button {
   font-size: 1rem;
   padding: 1rem 5rem;
   margin: 2rem 0 0 auto;
-  background: #000;
-  color: #fff;
+  background: var(--w);
+  color: var(--b);
+}
+
+button:hover {
+  background: var(--y);
+  color: var(--b);
 }
 
 textarea {
   height: 10rem;
+  resize: vertical;
 }
 
 h2 {

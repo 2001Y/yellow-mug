@@ -40,6 +40,10 @@ h6 {
   font-weight: inherit;
 }
 
+li a {
+  display: block;
+}
+
 ul,
 ol {
   list-style: none;
@@ -275,18 +279,41 @@ select-ms-expand {
 
 body {
   font-family: Helvetica, "游ゴシック Medium", "Yu Gothic", YuGothic, -apple-system, Verdana, Meiryo;
-  --y: #ffea02;
-  --b: #121212;
-  --w: #f2f2f2;
+  --y: #fcda01;
+  --b: #000;
+  --w: #fff;
 }
 
-nav ul {
+a:hover {
+  color: var(--y);
+}
+
+#nav {
+  text-align: right;
+}
+
+#nav a {
+  padding: 0.6rem;
+  display: block;
+}
+
+#nav a:hover {
+  color: var(--b);
+}
+
+#nav ul {
+  text-align: left;
   display: flex;
   justify-content: flex-end;
 }
 
-nav li+li {
-  margin-left: 1.5rem;
+#nav li:hover {
+  background: var(--y);
+  color: var(--b);
+}
+
+#nav li+li {
+  margin-left: 0.3rem;
 }
 
 h1,
@@ -348,12 +375,26 @@ header {
 }
 
 header #back {
-  flex: 1;
+  flex: 2;
+}
+
+header #back a {
+  background: var(--b);
+  color: var(--w);
+  padding: 0.6rem;
+}
+
+header #back a:hover {
+  background: var(--y);
+  color: var(--b);
 }
 
 header #logo {
-  flex: 2;
+  flex: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header #logo:before {
@@ -367,8 +408,8 @@ header #logo:before {
   vertical-align: sub;
 }
 
-header nav {
-  flex: 1;
+header #nav {
+  flex: 2;
 }
 
 main {
@@ -381,6 +422,22 @@ main p {
   letter-spacing: 0.1em;
   line-height: 1.7em;
   margin-bottom: 1rem;
+}
+
+#menu,
+#menu+label {
+  display: none;
+}
+
+#menu+label {
+  background: var(--b);
+  color: var(--w);
+  padding: 0.56rem;
+}
+
+#menu+label:hover {
+  background: var(--y);
+  color: var(--b);
 }
 
 .youtube {
@@ -518,6 +575,41 @@ footer span {
   visibility: visible;
 }
 
+@media (max-width: 1500px) {
+  #menu+label {
+    display: inline-block;
+  }
+
+  nav {
+    height: 100vh;
+    width: 80vw;
+    background: var(--w);
+    position: fixed;
+    right: -80vw;
+    top: 5rem;
+    transition: 0.3s;
+  }
+
+  #nav ul {
+    flex-direction: column;
+  }
+
+  #nav a {
+    padding: 1rem;
+  }
+
+  #nav li+li {
+    margin: 0;
+    border-top: solid 0.3rem var(--b);
+  }
+
+  #menu:checked ~ nav {
+    display: block;
+    left: auto;
+    right: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .youtube {
     width: 100%;
@@ -533,6 +625,10 @@ footer span {
 }
 
 @media (max-width: 600px) {
+  :root {
+    font-size: 12px;
+  }
+
   #gallery,
   .comment {
     -moz-column-count: 4;
