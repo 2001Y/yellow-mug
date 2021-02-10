@@ -16,35 +16,6 @@ body {
   filter: blur(12px);
 }
 
-.comment {
-  -moz-column-count: 4;
-       column-count: 4;
-  -moz-column-fill: auto;
-       column-fill: auto;
-}
-
-.comment img {
-  width: 100%;
-  height: auto;
-  padding: 0.5rem 0;
-  transition: opacity 0.3s;
-  will-change: opacity;
-  cursor: zoom-in;
-}
-
-.comment img:hover {
-  opacity: 0.7;
-}
-
-@media (max-width: 600px) {
-  .comment {
-    -moz-column-count: 4;
-         column-count: 4;
-    -moz-column-fill: auto;
-         column-fill: auto;
-  }
-}
-
 @media (min-aspect-ratio: 16/9) {
   #bg {
     width: 100vw;
