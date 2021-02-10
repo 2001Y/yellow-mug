@@ -1,0 +1,11 @@
+main a {
+  font-weight: bold;
+  color: var(--w);
+  padding: 0.6rem;
+  background: var(--b);
+}
+
+main a:hover {
+  background: var(--y);
+  color: var(--b);
+}

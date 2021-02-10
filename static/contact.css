@@ -1,6 +1,11 @@
-body {
+body,
+nav {
   background: var(--b);
   color: var(--w);
+}
+
+nav li+li {
+  border-top: solid 0.3rem var(--w) !important;
 }
 
 main {
