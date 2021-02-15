@@ -3,9 +3,8 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
+<body style="--bg:url('/bg/bg.jpg')">
   {{ partial "header.html" . }}
-  <div id="load"><span>MARIN<br>&<br>YOSHIKI</span></div>
   <main>
     {{ .Content }}
   </main>
@@ -22,5 +21,13 @@
     </div>
   </section>
   {{ partial "footer.html" . }}
+  <script>
+    if(document.referrer.match(window.location.hostname)) {
+        load.classList.add('none');
+    }
+    if ( navigator.userAgent.indexOf('iPhone') > 0 ) {
+      document.body.classList.add("iPhone");
+    }
+  </script>
 </body>
 </html>

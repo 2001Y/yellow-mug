@@ -1,10 +1,62 @@
 body
-  background linear-gradient(rgba(250,250,250,.3),rgba(250,250,250,.3)), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVR4AWM4e/asDwwzAAFBAUwAAEBXGEy6iRBYAAAAAElFTkSuQmCC"), url("/bg2.jpg") no-repeat fixed bottom/cover
+  background var(--bg) no-repeat fixed center 90%/cover
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &:after
+    content ""
+    position fixed
+    top 0
+    left 0
+    height 100%
+    width 100%
+    z-index -1
+    background linear-gradient(45deg,rgba(250,250,250,.9),rgba(250,250,250,0),rgba(250,250,250,0)), url("/dot.png")
+    @media (max-width: 1300px)
+      background linear-gradient(170deg,rgba(250,250,250,.9),rgba(250,250,250,0),rgba(250,250,250,0)), url("/dot.png")
+main
+  flex: 1;
+  position fixed
+  bottom 2vmin
+  left 2vmin
+  @media (max-width: 1300px)
+    top 2vmin
+    left 2vmin
+  p
+    margin 0
+footer
+  position fixed
+  bottom 2vmin
+  right 2vmin
+  padding 1.5rem
 h1
   font inherit
   margin 0
 h2
   font-size 7rem
+  @media (max-width: 800px)
+    font-size 14vw
+  margin-top 0
+  position: relative;
+  span
+    position absolute
+    will-change transform,text-shadow
+    animation: exclamation 1.5s forwards
+    transform-origin left bottom
+@keyframes exclamation
+  0%
+    transform:scale(1) rotate(0) translate(0,0)
+  50%
+    text-shadow none
+  100%
+    transform:scale(1.6) rotate(20deg) translate(-.1em,-0em)
+    color var(--y)
+    text-shadow:1px 0 5px black;
+#sabTitle
+  font-weight bold
+  font-size 2rem
+  @media (max-width: 800px)
+    font-size 5vw
 
 #loadSVG
     margin: auto;
@@ -35,6 +87,8 @@ h2
   justify-content: flex-end;
   animation: load .5s 7s forwards,opacity .5s 9s forwards
   pointer-events: none;
+.none
+  display none!important
 @keyframes load
   0%
     background var(--b)
