@@ -5,15 +5,18 @@ body {
   flex-direction: column;
 }
 
-body:after {
+body:before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
   background: linear-gradient(45deg, rgba(250,250,250,0.9), rgba(250,250,250,0), rgba(250,250,250,0)), url("/dot.png");
+}
+
+body>* {
+  z-index: 2;
 }
 
 main {
@@ -47,7 +50,7 @@ h2 {
 
 h2 span {
   position: absolute;
-  will-change: transform, text-shadow;
+  will-change: transform, color, text-shadow;
   -webkit-animation: exclamation 1.5s 10s forwards;
           animation: exclamation 1.5s 10s forwards;
   transform-origin: left bottom;
@@ -56,6 +59,22 @@ h2 span {
 #sabTitle {
   font-weight: bold;
   font-size: 2rem;
+}
+
+#skip {
+  font-size: 2rem;
+  background: var(--b);
+  color: var(--w);
+  padding: 0.6rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  pointer-events: auto;
+}
+
+#skip:hover {
+  background: var(--y);
+  color: var(--b);
 }
 
 #loadSVG {
@@ -89,6 +108,7 @@ h2 span {
   justify-content: flex-end;
   -webkit-animation: load 0.5s 7s forwards, opacity 0.5s 9s forwards;
           animation: load 0.5s 7s forwards, opacity 0.5s 9s forwards;
+  will-change: background, opacity;
   pointer-events: none;
 }
 
@@ -101,7 +121,7 @@ svg {
   position: absolute;
   bottom: 0;
   left: 0;
-  will-change: animation;
+  will-change: fill, stroke-dashoffset, top, left, width, opacity, color;
   width: 100%;
 }
 
@@ -376,7 +396,7 @@ svg {
 }
 
 @media (max-width: 1300px) {
-  body:after {
+  body:before {
     background: linear-gradient(170deg, rgba(250,250,250,0.9), rgba(250,250,250,0), rgba(250,250,250,0)), url("/dot.png");
   }
 
