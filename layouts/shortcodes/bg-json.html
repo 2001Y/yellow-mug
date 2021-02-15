@@ -8,5 +8,6 @@
       {{ end }}
       ]
    {{ end }};
-   document.body.style = "--bg:url('/bg/" + bgList[Math.floor(Math.random()*bgList.length)] + "')"
+   let new_style = document.body.appendChild(document.createElement("style"));
+   new_style.innerHTML = ":root{--bg:url('/bg/" + bgList[Math.floor(Math.random()*bgList.length)] + "')}";
 </script>
