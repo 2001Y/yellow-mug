@@ -48,8 +48,8 @@ h2 {
 h2 span {
   position: absolute;
   will-change: transform, text-shadow;
-  -webkit-animation: exclamation 1.5s forwards;
-          animation: exclamation 1.5s forwards;
+  -webkit-animation: exclamation 1.5s 10s forwards;
+          animation: exclamation 1.5s 10s forwards;
   transform-origin: left bottom;
 }
 
@@ -90,10 +90,6 @@ h2 span {
   -webkit-animation: load 0.5s 7s forwards, opacity 0.5s 9s forwards;
           animation: load 0.5s 7s forwards, opacity 0.5s 9s forwards;
   pointer-events: none;
-}
-
-.none {
-  display: none !important;
 }
 
 svg {
@@ -156,6 +152,15 @@ svg {
 #ug {
   bottom: -10%;
   left: 55%;
+}
+
+.none #load {
+  display: none !important;
+}
+
+.none h2 span {
+  -webkit-animation: exclamation 1.5s forwards;
+          animation: exclamation 1.5s forwards;
 }
 
 @-webkit-keyframes exclamation {

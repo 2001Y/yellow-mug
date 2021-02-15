@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body style="--bg:url('/bg/bg.jpg')">
+<body>
   {{ partial "header.html" . }}
   <main>
     {{ .Content }}
@@ -23,10 +23,7 @@
   {{ partial "footer.html" . }}
   <script>
     if(document.referrer.match(window.location.hostname)) {
-        load.classList.add('none');
-    }
-    if ( navigator.userAgent.indexOf('iPhone') > 0 ) {
-      document.body.classList.add("iPhone");
+        document.body.classList.add('none');
     }
   </script>
 </body>

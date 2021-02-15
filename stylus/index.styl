@@ -41,7 +41,7 @@ h2
   span
     position absolute
     will-change transform,text-shadow
-    animation: exclamation 1.5s forwards
+    animation: exclamation 1.5s 10s forwards
     transform-origin left bottom
 @keyframes exclamation
   0%
@@ -87,8 +87,6 @@ h2
   justify-content: flex-end;
   animation: load .5s 7s forwards,opacity .5s 9s forwards
   pointer-events: none;
-.none
-  display none!important
 @keyframes load
   0%
     background var(--b)
@@ -133,6 +131,14 @@ svg
 #ug
   bottom -10%
   left 55%
+
+.none
+  #load
+    display none!important
+  h2
+    span
+      animation: exclamation 1.5s forwards
+
 @keyframes logoM
   0%
     bottom 0
