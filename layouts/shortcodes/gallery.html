@@ -5,7 +5,7 @@
       {{ range $files -}}
          {{ $caption := .Name | replaceRE "\\..*" "" | humanize }}
          {{ $linkURL := print ($.Get "dir") "/" .Name | absURL }}
-         <picture data-original={{ $linkURL }}>
+         <picture data-original={{ .Name }}>
             <img src={{ $linkURL }} alt="{{ $caption }}" decoding=async loading=lazy>
          </picture>
       {{ end }}
