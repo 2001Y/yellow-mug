@@ -1,5 +1,4 @@
 body {
-  background: var(--bg) no-repeat fixed center 90%/cover;
   display: flex;
   align-items: center;
   flex-direction: column;
