@@ -183,6 +183,45 @@ svg {
           animation: exclamation 1.5s forwards;
 }
 
+#hoverIMG {
+  width: 10rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  will-change: transform, opacity;
+}
+
+#hoverIMG:hover {
+  transform: translateY(7px);
+  opacity: 0.7;
+}
+
+.balloon1-left {
+  position: fixed;
+  bottom: 0;
+  left: 9rem;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  max-width: 60%;
+  color: var(--w);
+  font-size: 16px;
+  background: var(--b);
+  z-index: 99;
+  font-weight: bold;
+}
+
+.balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid var(--b);
+}
+
 @-webkit-keyframes exclamation {
   0% {
     transform: scale(1) rotate(0) translate(0, 0);
@@ -392,6 +431,23 @@ svg {
 
   100% {
     fill: var(--b);
+  }
+}
+
+@media (min-width: 1300px) {
+  #hoverIMG {
+    top: 5rem;
+    bottom: auto;
+    transform: rotate(180deg);
+  }
+
+  #hoverIMG:hover {
+    transform: rotate(180deg) translateY(7px);
+  }
+
+  .balloon1-left {
+    top: 5rem;
+    bottom: auto;
   }
 }
 

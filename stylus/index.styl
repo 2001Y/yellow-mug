@@ -194,3 +194,44 @@ svg
     fill #fff
   100%
     fill var(--b)
+
+#hoverIMG
+  width 10rem
+  position fixed
+  bottom 0
+  left 0
+  transition transform .3s, opacity.3s
+  will-change transform,opacity
+  &:hover
+    transform translateY(7px)
+    opacity .7
+  @media (min-width: 1300px)
+    top 5rem
+    bottom auto
+    transform rotate(180deg) 
+    &:hover
+      transform rotate(180deg) translateY(7px)
+.balloon1-left
+  position: fixed;
+  bottom 0
+  left 9rem
+  @media (min-width: 1300px)
+    top 5rem
+    bottom auto
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  max-width: 60%;
+  color: var(--w)
+  font-size: 16px;
+  background var(--b)
+  z-index 99
+  font-weight bold
+  &:before
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid var(--b)
