@@ -1,0 +1,39 @@
+<script type=application/ld+json>
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Article",
+        "headline" : "{{ .Title }}",
+        {{ if .IsHome }}
+            "headline" : "{{ .Site.Title }}",
+        {{ else }}
+            "headline" : "{{ .Title }}｜{{ .Site.Title }}",
+        {{ end }}
+        "description": {{ .Content | plainify | truncate 200 }},
+        "image": [
+          "https://yellow-mug.com/logo.jpg"
+        ],
+        "publisher" : {
+            "@type" : "Organization",
+            "name" : "YellowMug",
+            "logo" : {
+                "@type" : "ImageObject",
+                "url" : "https://yellow-mug.com/ogp.jpg",
+                "height" : 300,
+                "width" : 400
+            }
+        },
+        "author" : {
+            "@type" : "Person",
+            "name" : "2001Y"
+        },
+        "mainEntityOfPage": "https://yellow-mug.com"
+    }
+    </script>
+    <script type=application/ld+json>
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://yellow-mug.com",
+      "logo": "https://yellow-mug.com/logo.jpg"
+    }
+    </script>
