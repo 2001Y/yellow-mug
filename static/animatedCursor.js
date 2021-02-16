@@ -8,7 +8,7 @@ var arr_buttonAnimationFrames = ["IMG_CURSOR_02_FRAME01.png", "IMG_CURSOR_02_FRA
 var arr_textAnimatedFrames = ["IMG_CURSOR_03_FRAME01.png", "IMG_CURSOR_03_FRAME02.png", "IMG_CURSOR_03_FRAME03.png", "IMG_CURSOR_03_FRAME04.png"];
 var arr_miscAnimatedFrames = ["IMG_CURSOR_04_FRAME01.png", "IMG_CURSOR_04_FRAME02.png", "IMG_CURSOR_04_FRAME03.png", "IMG_CURSOR_04_FRAME04.png"];
 //path
-var str_cursorDirectory = "CURSOR/"; //directory path (with cursor images)
+var str_cursorDirectory = "/CURSOR/"; //directory path (with cursor images)
 //interval
 var cursorAnimationInt;
 //starting frame (current array element)
