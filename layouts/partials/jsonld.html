@@ -2,7 +2,6 @@
     {
         "@context" : "http://schema.org",
         "@type" : "Article",
-        "headline" : "{{ .Title }}",
         {{ if .IsHome }}
             "headline" : "{{ .Site.Title }}",
         {{ else }}
