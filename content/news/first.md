@@ -28,7 +28,7 @@ Instagram→[https://instagram.com/gallerysiacca](https://instagram.com/gallerys
 
 ## 展示作品について
 
-### ”Goodbye Our Yellow Brick”
+### “Goodbye Our Yellow Brick”
 
 大学の課題で”Goodbye Yellow Brick Road” (Elton John)のミュージックビデオを作成しました。大学内で拾ってきたものを使用し、自由な表現方法で制作するというのが今回の課題で、拾ってきた”レンガ”を作品に登場させました。
 
