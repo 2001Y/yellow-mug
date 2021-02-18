@@ -24,10 +24,6 @@ Webサイト→<http://www.siacca.com/gallery/>
 
 Instagram→[https://instagram.com/gallerysiacca](https://instagram.com/gallerysiacca?igshid=1wq2794q4gy12)
 
-
-
-
-
 - - -
 
 ## 展示作品について
@@ -47,3 +43,5 @@ Instagram→[https://instagram.com/gallerysiacca](https://instagram.com/gallerys
 ## UNDER 20について
 
 「UNDER 20」という20歳若しくは、大学二年生以下の美術、文学、音楽など、あらゆる表現に挑む作品を集めた企画をギャラリーシアカで行います。
+
+![UNDER20's poster](/static/images/49c42a50-84ac-4b95-b2a5-2459c740bd7a.jpg)
