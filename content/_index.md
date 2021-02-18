@@ -17,5 +17,5 @@ css: "index"
     <h3>Pickup!!</h3>
 </div>
 {{< md >}}
-[展示のお知らせ：銀座GallerySIACCA『UNDER 20』](/news/first.html)
+[展示のお知らせ：銀座GallerySIACCA『UNDER 20』](/news/2021-02-18.html)
 {{< /md >}}
