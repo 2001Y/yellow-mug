@@ -1,0 +1,1 @@
+<img src="{{ .Destination | safeURL | replaceRE "/static" ""}}" alt="{{ .PlainText }}"{{ with .PlainText }} title="{{ . }}"{{ end }} decoding=async loading=lazy>
