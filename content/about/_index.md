@@ -2,20 +2,19 @@
 title: About
 date: 2021-01-26T11:46:25.652Z
 ---
-
 ## Yellow Mug
 
 私たちのファーストアートワーク“Goodbye Our Yellow Brick”から“Yellow”をユニットのテーマカラーとしました。
 
 また、Marin & Yoshiki は毎日必ず紅茶を飲みます。私たちの近くにはいつも“Mug”があります。そこから生まれたユニット名が“Yellow Mug”！
 
-“Yellow Mug”には”Yoshiki”, “Marin”のイニシャル”Y”, “M”が隠れています！！
+“Yellow Mug”には“Yoshiki”, “Marin”のイニシャル“Y”, “M”が隠れています！！
 
 ## Theme Color
 
 💛FFEA02・🖤121212・🤍F2F2F2
 
-NO BORDEでクリエイティブを届けたい。
+NO BORDERでクリエイティブを届けたい。
 
 ## Theme song
 
@@ -23,9 +22,9 @@ NO BORDEでクリエイティブを届けたい。
 
 ## About us
 
-
 {{< flex >}}
 {{< div >}}
+
 ### 田辺麻鈴
 
 武蔵野美術大学<br>
@@ -38,6 +37,7 @@ NO BORDEでクリエイティブを届けたい。
 {{< /div >}}
 
 {{< div >}}
+
 ### 田村義希
 
 武蔵野美術大学<br>
@@ -49,4 +49,3 @@ NO BORDEでクリエイティブを届けたい。
 <img src="/yoshiki.JPG" alt="">
 {{< /div >}}
 {{< /flex >}}
-
