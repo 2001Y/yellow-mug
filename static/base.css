@@ -395,8 +395,14 @@ header #logo>* {
   height: 1em;
 }
 
-header #back {
+header>*:first-child,
+header>*:last-child {
   flex: 2;
+}
+
+header>*:last-child {
+  width: 20%;
+  text-align: right;
 }
 
 header #back a {
@@ -430,10 +436,6 @@ header #logo:before {
   background: url("/logo.png") no-repeat center;
   background-size: contain;
   vertical-align: sub;
-}
-
-header #nav {
-  flex: 2;
 }
 
 main {
@@ -493,6 +495,24 @@ main p big {
   height: 100%;
 }
 
+.sns li {
+  display: inline-block;
+}
+
+.sns a {
+  background: var(--b);
+  color: var(--w);
+  padding: 0.6rem;
+  height: 1em;
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+.sns a:hover {
+  background: var(--y);
+  color: var(--b);
+}
+
 footer {
   padding: 3rem;
   text-align: center;
@@ -505,11 +525,6 @@ footer a {
 
 footer span {
   opacity: 0.5;
-}
-
-.fab {
-  font-size: 2rem;
-  margin-right: 0.5rem;
 }
 
 .flex {
@@ -638,13 +653,16 @@ footer span {
   }
 
   nav {
-    height: 100vh;
+    height: calc(100vh - 5rem);
     width: 20rem;
     background: var(--w);
     position: fixed;
     right: -80vw;
     top: 5rem;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
 @supports ((-webkit-backdrop-filter: blur(50px)) or (backdrop-filter: blur(50px))) {
@@ -655,8 +673,12 @@ footer span {
     }
 }
 
+  nav .sns {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
   #menu:checked~nav {
-    display: block;
     left: auto;
     right: 0;
   }

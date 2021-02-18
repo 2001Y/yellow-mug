@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2021-01-26T11:46:25.652Z
+css: "about"
 ---
 ## Yellow Mug
 
@@ -44,7 +45,7 @@ NO BORDERでクリエイティブを届けたい。
 クリエイティブイノベーション学科1年<br>
 2001年生まれ
 
-[<i class="fab fa-instagram"></i>](https://21y.in/insta)[<i class="fab fa-twitter"></i>](https://21y.in/tw)
+[<i class="fab fa-instagram"></i>](https://21y.in/insta)[<i class="fab fa-twitter"></i>](https://21y.in/tw)[<i class="fab fa-facebook"></i>](https://21y.in/fb)[<i class="fas fa-browser"></i>](https://2001y.me)
 
 <img src="/yoshiki.JPG" alt="">
 {{< /div >}}

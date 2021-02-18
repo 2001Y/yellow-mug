@@ -1,9 +1,28 @@
 <header>
   <section id="back">
-    {{ if not .IsHome }}
-    <a href="{{ path.Dir .RelPermalink }}">
-      < BACK
-    </a>
+    {{ if .IsHome }}
+    <ul class=sns>
+      <li>
+        <a href="https://twitter.com/yellow_mug3" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/yellowmug2021" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://fb.me/yellowmug2021" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://note.com/yellow_mug" target="_blank" rel="noopener noreferrer">
+          <i class="far fa-sticky-note"></i>
+        </a>
+      </li>
+    </ul>
     {{ end }}
   </section>
   <a href="/" id=logo>
@@ -13,11 +32,11 @@
       <span>{{.Site.Title}}</span>
     {{ end }}
   </a>
-  <section id=nav>
+  <section>
     <input type="checkbox" id=menu>
     <label for=menu></label>
     <nav>
-      <ul>
+      <ul id=nav>
         {{ if .Site.IsServer }}
           <li><a href="/">Top</a></li>
           <li><a href="/about.html">About</a></li>
@@ -33,6 +52,28 @@
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contact">Contact</a></li>
         {{ end }}
+      </ul>
+      <ul class=sns>
+        <li>
+          <a href="https://twitter.com/yellow_mug3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/yellowmug2021" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://fb.me/yellowmug2021" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://note.com/yellow_mug" target="_blank" rel="noopener noreferrer">
+            <i class="far fa-sticky-note"></i>
+          </a>
+        </li>
       </ul>
     </nav>
   </section>
