@@ -18,7 +18,7 @@ collections:
     name: "works" # 管理画面のパスで使う　例：/admin/collections/blog
     folder: "content/works" # Markdownを保存するディレクトリ。Hugoのsectionにあたる
     create: true # 新しいページを作ることを許可する
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
     preview_path: blog/{{slug}}
     show_preview_links: false
     fields: # ページ作成画面で使う。Front Matterの値を書く
@@ -29,7 +29,7 @@ collections:
     name: "news" # 管理画面のパスで使う　例：/admin/collections/blog
     folder: "content/news" # Markdownを保存するディレクトリ。Hugoのsectionにあたる
     create: true # 新しいページを作ることを許可する
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}" # Markdownのファイル名　例：YYYY-MM-DD-title.md
     preview_path: blog/{{slug}}
     show_preview_links: false
     fields: # ページ作成画面で使う。Front Matterの値を書く
