@@ -1,34 +1,33 @@
 ---
-title: 銀座GallerySIACCA『UNDER 20』展示のお知らせ
+title: 展示のお知らせ：銀座GallerySIACCA『UNDER 20』
 date: 2021-01-16T03:27:06.788Z
 ---
 みなさんこんにちは！お知らせです！
 
 銀座のギャラリーSIACCAにて、大学の課題で作成した"Goodbye Our Yellow Brick"を出展することになりました！
 
-**マリンヨシキは毎日14:00-16:00にギャラリーにいます！**
-
-また、映像作品のプロジェクター投影を土曜日、日曜日の夕方5時から行っています！📹
-
 是非いらしてください！お待ちしております！👩🏻‍🎤👨🏻‍🎤
 
-### 🐝日時・場所🐝
+Webサイト：[http://www.siacca.com/gallery/](http://www.siacca.com/gallery/)<br>
+Instagram：[https://instagram.com/gallerysiacca](https://instagram.com/gallerysiacca)
 
-* 展示期間：2021年 3/17（水）〜3/22（月）\
-  12:00-19:00\
-  最終日17:00閉場
-* 場所：ギャラリーSIACCA\
-  東京都中央区銀座2丁目9-16地下1階
+### 展示期間
+**2021年3月17日（水） - 22日（月）<br><big>12:00-19:00</big><br>最終日17:00閉場**
 
-Webサイト→<http://www.siacca.com/gallery/>
+プロジェクター投影は土曜日、日曜日の夕方5時から行っています！📹
 
-Instagram→[https://instagram.com/gallerysiacca](https://instagram.com/gallerysiacca?igshid=1wq2794q4gy12)
+**マリン、ヨシキは毎日14:00-16:00にギャラリーにいます！**
+  
+### アクセス
+**銀座GallerySIACCA**<br>東京都中央区銀座2丁目9-16地下1階
 
-- - -
+<iframe class=map src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.653502648684!2d139.768407!3d35.672979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbefc63d9459a2d6e!2z44Ku44Oj44Op44Oq44O8IOOCt-OCouOCqw!5e0!3m2!1sja!2sjp!4v1613641694144!5m2!1sja!2sjp" height="200" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+***
 
 ## 展示作品について
 
-### ”Goodbye Our Yellow Brick”
+### Goodbye Our Yellow Brick
 
 大学の課題で”Goodbye Yellow Brick Road” (Elton John)のミュージックビデオを作成しました。大学内で拾ってきたものを使用し、自由な表現方法で制作するというのが今回の課題で、拾ってきた”レンガ”を作品に登場させました。
 
@@ -38,7 +37,9 @@ Instagram→[https://instagram.com/gallerysiacca](https://instagram.com/gallerys
 
 それぞれのコンプレックスや悩みを重たいイエローブリックに詰め込み、それを私たち自身の手で打ち壊しGoodbyeします。
 
-[→MORE](https://yellow-mug.com/works/yellow-brick.html)
+{{<right>}}
+[→ もっと詳しく](https://yellow-mug.com/works/yellow-brick.html)
+{{</right>}}
 
 ## UNDER 20について
 

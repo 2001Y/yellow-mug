@@ -2,3 +2,7 @@ main a:hover {
   background: var(--b);
   color: var(--w);
 }
+
+main h2 {
+  margin-bottom: 0.5rem;
+}

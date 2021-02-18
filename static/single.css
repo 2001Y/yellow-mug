@@ -4,6 +4,14 @@
   text-transform: capitalize;
 }
 
+time {
+  font-size: 1em;
+}
+
+time:before {
+  content: "・";
+}
+
 .gallery {
   -moz-column-count: 6;
        column-count: 6;
@@ -27,6 +35,14 @@
 main p img {
   max-height: 50vh;
   max-width: 80%;
+}
+
+main a {
+  border-bottom: solid 1px var(--b);
+}
+
+main a:hover {
+  border-bottom: solid 1px var(--y);
 }
 
 @media (max-width: 800px) {

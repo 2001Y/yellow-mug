@@ -23,6 +23,7 @@ function animateCursor(){
 	animatedCursorForElement('a', arr_buttonAnimationFrames);
 	animatedCursorForElement('label', arr_buttonAnimationFrames);
 	animatedCursorForElement('button', arr_buttonAnimationFrames);
+	animatedCursorForElement('iframe', arr_buttonAnimationFrames);
 	animatedCursorForElement('input', arr_textAnimatedFrames);
 				
 	//increment

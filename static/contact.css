@@ -1,11 +1,27 @@
 body,
 nav {
-  background: var(--b);
-  color: var(--w);
+  background: var(--y);
+  color: var(--b);
 }
 
-nav li+li {
-  border-top: solid 0.3rem var(--w) !important;
+header #back a:hover,
+header #nav label:hover {
+  background: var(--w);
+  color: var(--b);
+}
+
+#menu:checked+label {
+  background: var(--w);
+  color: var(--b);
+}
+
+#nav li:hover {
+  background: var(--w);
+  color: var(--b);
+}
+
+#nav li+li {
+  border-top: solid 0.3rem var(--b);
 }
 
 main {
@@ -22,7 +38,20 @@ input,
 textarea {
   padding: 1rem;
   width: 100%;
-  border: solid 0.3rem var(--w);
+  border: solid 0.3rem var(--b);
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: var(--b);
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: var(--b);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--b);
 }
 
 button {
@@ -30,12 +59,12 @@ button {
   font-size: 1rem;
   padding: 1rem 5rem;
   margin: 2rem 0 0 auto;
-  background: var(--w);
-  color: var(--b);
+  background: var(--b);
+  color: var(--w);
 }
 
 button:hover {
-  background: var(--y);
+  background: var(--w);
   color: var(--b);
 }
 

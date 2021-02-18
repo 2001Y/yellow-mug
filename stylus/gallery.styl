@@ -1,8 +1,20 @@
+body,nav
+  background var(--b)
+  color  var(--w)
+header
+  #back a,#nav label
+    color var(--b)
+    background var(--w)
+    &:hover
+      background var(--y)
+      color var(--b)
 main a
   font-weight bold
-  color var(--w)
   padding .6rem
-  background var(--b)
+  color var(--b)
+  background var(--w)
   &:hover
     background var(--y)
     color var(--b)
+#nav li+li
+  border-top solid .3rem var(--w)

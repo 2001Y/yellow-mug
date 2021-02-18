@@ -8,7 +8,7 @@
 <body>
   {{ partial "header.html" . }}
   <main>
-    <span id=SubTitle>{{ .Section }}</span>
+    <span id=SubTitle>{{ .Section }}</span><time>{{ .Date.Format "2006.01.02" }}</time>
     <h1>{{ .Title }}</h1>
     {{ .Content }} 
   </main>

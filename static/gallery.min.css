@@ -1,1 +1,1 @@
-main a{font-weight:700;color:var(--w);padding:.6rem;background:var(--b)}main a:hover{background:var(--y);color:var(--b)}
+body,nav{background:var(--b);color:var(--w)}header #back a,header #nav label{color:var(--b);background:var(--w)}header #back a:hover,header #nav label:hover{background:var(--y);color:var(--b)}main a{font-weight:700;padding:.6rem;color:var(--b);background:var(--w)}main a:hover{background:var(--y);color:var(--b)}#nav li+li{border-top:solid .3rem var(--w)}
