@@ -213,6 +213,12 @@ svg
       transform rotate(180deg) translateY(7px)
 .balloon1-left
   color var(--w)
+  background var(--b)
+  &:hover
+    color var(--b)
+    background var(--y)
+    &:before
+      border-right: 15px solid var(--y)
   position: fixed;
   bottom 0
   left 9rem
@@ -223,7 +229,6 @@ svg
   margin: 1.5em 0 1.5em 15px;
   padding: 8px 10px;
   max-width: 60%;
-  background var(--b)
   z-index 99
   font-weight bold
   &:before

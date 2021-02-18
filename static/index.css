@@ -199,6 +199,7 @@ svg {
 
 .balloon1-left {
   color: var(--w);
+  background: var(--b);
   position: fixed;
   bottom: 0;
   left: 9rem;
@@ -206,9 +207,17 @@ svg {
   margin: 1.5em 0 1.5em 15px;
   padding: 8px 10px;
   max-width: 60%;
-  background: var(--b);
   z-index: 99;
   font-weight: bold;
+}
+
+.balloon1-left:hover {
+  color: var(--b);
+  background: var(--y);
+}
+
+.balloon1-left:hover:before {
+  border-right: 15px solid var(--y);
 }
 
 .balloon1-left:before {
