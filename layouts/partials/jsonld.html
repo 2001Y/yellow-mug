@@ -9,14 +9,14 @@
         {{ end }}
         "description": "武蔵野美術大学クリエイティブイノベーション学科の田辺麻鈴と田村義希によって結成されたアートユニット、Yellow Mug! 私たちの「クリエイティブ」をみんなにも楽しんでほしい！",
         "image": [
-          "https://yellow-mug.com/logo.jpg"
+          "{{ .Site.BaseURL | safeURL  }}logo.jpg"
         ],
         "publisher" : {
             "@type" : "Organization",
             "name" : "YellowMug",
             "logo" : {
                 "@type" : "ImageObject",
-                "url" : "https://yellow-mug.com/ogp.jpg",
+                "url" : "{{ .Site.BaseURL | safeURL  }}ogp/ogp.jpg",
                 "height" : 300,
                 "width" : 400
             }
@@ -25,14 +25,14 @@
             "@type" : "Person",
             "name" : "2001Y"
         },
-        "mainEntityOfPage": "https://yellow-mug.com"
+        "mainEntityOfPage": "{{ .Site.BaseURL | safeURL  }}"
     }
     </script>
     <script type=application/ld+json>
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "url": "http://yellow-mug.com",
-      "logo": "https://yellow-mug.com/logo.jpg"
+      "url": "{{ .Site.BaseURL | safeURL   }}",
+      "logo": "{{ .Site.BaseURL | safeURL  }}logo.jpg"
     }
     </script>

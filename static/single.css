@@ -34,7 +34,9 @@ time:before {
 
 main p img {
   max-height: 50vh;
+  height: auto;
   max-width: 80%;
+  width: auto;
 }
 
 main a {

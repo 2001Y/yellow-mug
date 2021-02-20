@@ -18,7 +18,7 @@ for (let i = 0; i < img.length; ++i) {
     let original = this.dataset.original,
       text = this.dataset.figcaption;
     webp.srcset= original + ".webp";
-    jpeg.src = original + ".jpg";
+    jpeg.src = original;
     figcaption.innerHTML = text;
     lightbox.classList.add('open');
     lightbox.classList.remove('close');

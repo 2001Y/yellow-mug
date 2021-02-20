@@ -6,7 +6,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="">
-<meta property="og:image" content="https://yellow-mug.com/ogp.jpg" />
+{{ if .Params.ogp }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogp }}" />
+{{ else }}
+<meta property="og:image" content="{{ .Site.BaseURL }}/ogp/ogp.jpg" />
+{{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if .IsHome }}
@@ -41,3 +45,12 @@
 {{ end }}
 <script src="https://kit.fontawesome.com/657e036f7a.js" crossorigin="anonymous"></script>
 <script src="/animatedCursor.min.js"></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fcda01">
+<meta name="msapplication-TileColor" content="#fcda01">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#fcda01">

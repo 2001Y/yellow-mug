@@ -21,22 +21,14 @@ let closure = require('gulp-closure-compiler-service');
 var minify = require('gulp-minifier');
 
 exports.img = () =>
-    // src('images/*.{png,jpeg,jpg,JPG,gif}')
     src('images/*.{png,jpeg,jpg,JPG,gif}')
         .pipe(changed('static/img'))
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 80, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
+        // .pipe(imagemin(['images/*.jpg'], 'static/img', {
+        //     use: [
+        //         imageminMozjpeg()
+        //     ]
+        // })
         .pipe(responsive({
-            // '*.{png,gif}': [{}],
             '*.{jpeg,jpg,JPG}': [{
                 format: 'jpg'
             },{
@@ -70,78 +62,8 @@ exports.img = () =>
         }, {
       errorOnEnlargement: false
     }))
-        .pipe(dest('static/img'));
-exports.tmb = () =>
-    src('images/tmb/*.{png,jpeg,jpg,JPG,gif}')
-        .pipe(changed('static/img'))
-        .pipe(imagemin([
-            jpeg({ quality: 90 }),
-            png(),
-            gif()
-        ]))
-        .pipe(responsive({
-            '*.{jpeg,jpg,JPG}': [{format: 'jpg'}],
-            '*.{png,jpeg,jpg,JPG}': [{
-                format: 'webp'
-            },{
-                format: 'webp',
-                width: 120,
-                height: 120,
-                rename: { suffix: '-120' }
-            },{
-                format: 'jpg',
-                width: 120,
-                height: 120,
-                rename: { suffix: '-120' }
-            },{
-                format: 'webp',
-                width: 240,
-                height: 240,
-                rename: { suffix: '-240' }
-            },{
-                format: 'jpg',
-                width: 240,
-                height: 240,
-                rename: { suffix: '-240' }
-            },{
-                format: 'webp',
-                width: 360,
-                height: 360,
-                rename: { suffix: '-360' }
-            },{
-                format: 'jpg',
-                width: 360,
-                height: 360,
-                rename: { suffix: '-360' }
-            },{
-                format: 'webp',
-                width: 700,
-                rename: { suffix: '-700' }
-            },{
-                format: 'jpg',
-                width: 700,
-                rename: { suffix: '-700' }
-            },{
-                format: 'webp',
-                width: 1400,
-                rename: { suffix: '-1400' }
-            },{
-                format: 'jpg',
-                width: 1400,
-                rename: { suffix: '-1400' }
-            },{
-                format: 'webp',
-                width: 2100,
-                rename: { suffix: '-2100' }
-            },{
-                format: 'jpg',
-                width: 2100,
-                rename: { suffix: '-2100' }
-            }]
-        }, {
-      errorOnEnlargement: false
-    }))
-        .pipe(dest('static/img'));
+    .pipe(dest('static/img'))
+
 exports.html = () =>
     src('public/*.html')
         .pipe(cache('html'))

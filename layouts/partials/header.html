@@ -18,6 +18,10 @@
         </a>
       </li>
     </ul>
+    {{ else }}
+      <a href="{{ path.Dir .RelPermalink }}">
+        < BACK
+      </a>
     {{ end }}
   </section>
   <a href="/" id=logo>

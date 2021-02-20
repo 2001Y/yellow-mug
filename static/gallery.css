@@ -4,18 +4,6 @@ nav {
   color: var(--w);
 }
 
-header #back a,
-header #nav label {
-  color: var(--b);
-  background: var(--w);
-}
-
-header #back a:hover,
-header #nav label:hover {
-  background: var(--y);
-  color: var(--b);
-}
-
 main a {
   font-weight: bold;
   padding: 0.6rem;
@@ -30,4 +18,12 @@ main a:hover {
 
 #nav li+li {
   border-top: solid 0.3rem var(--w);
+}
+
+@media (max-width: 1500px) {
+  header #back a,
+  header #menu+label {
+    color: var(--b);
+    background: var(--w);
+  }
 }

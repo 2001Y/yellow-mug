@@ -1,13 +1,11 @@
 body,nav
   background var(--b)
   color  var(--w)
-header
-  #back a,#nav label
-    color var(--b)
-    background var(--w)
-    &:hover
-      background var(--y)
+@media (max-width: 1500px)
+  header
+    #back a,#menu+label
       color var(--b)
+      background var(--w)
 main
   a
     font-weight bold
@@ -19,4 +17,3 @@ main
       color var(--b)
 #nav li+li
   border-top solid .3rem var(--w)
-  
