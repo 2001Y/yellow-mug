@@ -10,14 +10,14 @@
     {{ $avifPathStatic:= printf "static/%s" $avifPath }}
 
     {{ if (fileExists $avifPathStatic) -}}
-      <source srcset="{{ $avifPath | safeURL }}" type="image/avif" >
+      <source srcset="{{ $avifPath }}" type="image/avif" >
     {{- end }}
 
     {{ $webpPath:= replace $des ".jpg" ".webp" }}
     {{ $webpPathStatic:= printf "static/%s" $webpPath }}
 
     {{ if (fileExists $webpPathStatic) -}}
-      <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+      <source srcset="{{ $webpPath }}" type="image/webp" >
     {{- end }}
   {{- end }}
 
@@ -26,18 +26,18 @@
     {{ $avifPathStatic:= printf "static/%s" $avifPath }}
 
     {{ if (fileExists $avifPathStatic) -}}
-      <source srcset="{{ $avifPath | safeURL }}" type="image/avif" >
+      <source srcset="{{ $avifPath }}" type="image/avif" >
     {{- end }}
 
     {{ $webpPath:= replace $des ".png" ".webp" }}
     {{ $webpPathStatic:= printf "static/%s" $webpPath }}
 
     {{ if (fileExists $webpPathStatic) -}}
-      <source srcset="{{ $webpPath | safeURL }}" type="image/webp" >
+      <source srcset="{{ $webpPath }}" type="image/webp" >
     {{- end }}
   {{- end }}
 
-  {{ $img := imageConfig (add "/static" ($des | safeURL)) }}
+  {{ $img := imageConfig (add "/static" $des) }}
 
   <img
     data-original="{{ $des }}"

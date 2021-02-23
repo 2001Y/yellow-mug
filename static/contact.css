@@ -4,20 +4,14 @@ nav {
   color: var(--b);
 }
 
-header #back a:hover,
-header #nav label:hover {
-  background: var(--w);
-  color: var(--b);
-}
-
 #menu:checked+label {
   background: var(--w);
   color: var(--b);
 }
 
-#nav li:hover {
-  background: var(--w);
-  color: var(--b);
+#nav a:hover {
+  background: var(--b);
+  color: var(--w);
 }
 
 #nav li+li {
@@ -75,4 +69,18 @@ textarea {
 
 h2 {
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1500px) {
+  header #back a,
+  header #menu+label {
+    background: var(--b);
+    color: var(--w);
+  }
+
+  header #back a:hover,
+  header #menu+label:hover {
+    background: var(--w);
+    color: var(--b);
+  }
 }
