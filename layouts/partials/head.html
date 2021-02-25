@@ -9,7 +9,7 @@
 {{ if .Params.ogp }}
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogp }}" />
 {{ else }}
-<meta property="og:image" content="{{ .Site.BaseURL }}/ogp/ogp.jpg" />
+<meta property="og:image" content="{{ .Site.BaseURL }}ogp/ogp.jpg" />
 {{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />
 <link rel="canonical" href="{{ .Permalink }}">
