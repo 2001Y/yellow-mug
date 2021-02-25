@@ -37,16 +37,18 @@
     <nav>
       <ul id=nav>
         {{ if .Site.IsServer }}
-          <li><a href="/">Top</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/news.html">News</a></li>
-          <li><a href="/works.html">Works</a></li>
-          <li><a href="/gallery.html">Gallery</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/"><small>トップ</small>Top</a></li>
+          <li><a href="/about.html"><small>YellowMugについて</small>About</a></li>
+          <li><a href="/news.html"><small>ニュース</small>News</a></li>
+          <li><a href="/blog.html"><small>ブログ</small>Blog</a></li>
+          <li><a href="/works.html"><small>作品</small>Works</a></li>
+          <li><a href="/gallery.html"><small>ギャラリー</small>Gallery</a></li>
+          <li><a href="/contact.html"><small>お問い合わせ</small>Contact</a></li>
         {{ else }}
           <li><a href="/">Top</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/news">News</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/works">Works</a></li>
           <li><a href="/gallery">Gallery</a></li>
           <li><a href="/contact">Contact</a></li>
