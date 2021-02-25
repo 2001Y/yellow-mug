@@ -25,6 +25,7 @@ function animateCursor(){
 	animatedCursorForElement('button', arr_buttonAnimationFrames);
 	animatedCursorForElement('iframe', arr_buttonAnimationFrames);
 	animatedCursorForElement('input', arr_textAnimatedFrames);
+	animatedCursorForElement('textarea', arr_textAnimatedFrames);
 				
 	//increment
 	cursorAnimationFrame += 1;

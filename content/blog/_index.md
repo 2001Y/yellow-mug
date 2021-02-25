@@ -2,6 +2,7 @@
 title: Blog
 date: 2021-01-26T11:46:25.652Z
 css: "list"
+ogp: "ogp/blog.jpg"
 ---
 
 YellowMugでは [note.com](https://note.com/yellow_mug) を活用して情報発信しています。<br>

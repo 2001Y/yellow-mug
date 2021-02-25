@@ -2,6 +2,7 @@
 title: About
 date: 2021-01-26T11:46:25.652Z
 css: "about"
+ogp: "ogp/about.jpg"
 ---
 ## Yellow Mug
 
