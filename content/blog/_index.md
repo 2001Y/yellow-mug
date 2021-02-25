@@ -8,6 +8,9 @@ YellowMugでは [note.com](https://note.com/yellow_mug) を活用して情報発
 以下は [note.com](https://note.com/yellow_mug) の最新記事です。
 
 <ul id=rss><big><b>読み込み中...</b></big></ul>
+
+[→ もっと見る](https://note.com/yellow_mug)
+
 <script>
 fetch("//api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnote.com%2Fyellow_mug%2Frss")
 .then(function(response) {
