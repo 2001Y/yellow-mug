@@ -1,6 +1,7 @@
 ---
 date: 2021-01-25T18:48:21+09:00
 css: "index"
+ogp: "ogp/top.jpg"
 ---
 {{< bg-json dir="/static/bg/" >}}
 
