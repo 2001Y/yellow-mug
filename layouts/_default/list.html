@@ -14,8 +14,7 @@
         <li>
           <a href="{{.RelPermalink}}">
             <h2>{{.Title}}</h2>
-            <time>{{.Date.Format "2006-01-02"}}</time>
-            
+            <p><time>{{.Date.Format "2006-01-02"}}</time>{{ if .Params.txt }} ｜ {{ .Params.txt }}{{ end }}</p>
           </a>
         </li>
         {{ end }}

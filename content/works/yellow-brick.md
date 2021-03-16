@@ -1,5 +1,6 @@
 ---
 title: "🧱Goodbye Our Yellow Brick"
+txt: "大学の課題でElton Johnの”Goodbye Yellow Brick Road”のミュージックビデオを作成しました。"
 date: 2021-01-16T03:27:06.788Z
 css: "yellow-brick"
 ogp: "ogp/works.jpg"

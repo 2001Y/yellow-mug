@@ -1,5 +1,6 @@
 ---
 title: "YellowMug ✖︎ BananaMuffin"
+txt: "マリンの所属するBananaMuffinのイベントにヨシキがカメラマンとして参加。"
 date: 2021-03-10T00:48:34+09:00
 list: ture
 ogp: "ogp/works.jpg"

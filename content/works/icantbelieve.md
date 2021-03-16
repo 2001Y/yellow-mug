@@ -1,5 +1,6 @@
 ---
 title: "I Can't Believe"
+txt: "大学の課題で毎日石と向き合いながらひたすら描き続けました。マリンの作品をヨシキが撮影！"
 date: 2020-11-14T03:27:06.788Z
 css: "yellow-brick"
 ogp: "ogp/works.jpg"

@@ -5,6 +5,10 @@ main a {
   padding: 0.6rem;
 }
 
+main a p {
+  margin-bottom: 0;
+}
+
 main a:hover {
   background: var(--y);
   color: var(--b);
