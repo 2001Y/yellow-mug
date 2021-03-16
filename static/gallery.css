@@ -6,7 +6,6 @@ nav {
 
 main a {
   font-weight: bold;
-  padding: 0.6rem;
   color: var(--b);
   background: var(--w);
 }

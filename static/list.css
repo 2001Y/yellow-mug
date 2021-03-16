@@ -1,6 +1,8 @@
 main a {
   background: var(--b);
   color: var(--w);
+  margin-bottom: 1rem;
+  padding: 0.6rem;
 }
 
 main a:hover {
@@ -9,5 +11,6 @@ main a:hover {
 }
 
 main h2 {
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
