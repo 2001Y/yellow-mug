@@ -399,7 +399,13 @@ footer
   backdrop-filter: blur(13px);
   z-index: 99;
   transition .3s;
-  cursor pointer
+  cursor zoom-out
+  &:after
+    content "×"
+    font-size 3rem
+    position fixed
+    top .3rem
+    right 1rem
   img,source
     max-width: 100vw;
     max-height 100vh

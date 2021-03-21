@@ -1,7 +1,5 @@
 let img = document.querySelectorAll("main picture"),
     jpeg = document.getElementById("lightbox-jpeg"),
-    webp = document.getElementById("lightbox-webp"),
-    figcaption = document.getElementById("lightbox-figcaption"),
     lightbox = document.getElementById("lightbox");
 
 var LbObserver = new IntersectionObserver(handle);
@@ -15,11 +13,8 @@ function handle(e) {
 }
 for (let i = 0; i < img.length; ++i) {
   img[i].onclick = function () {
-    let original = this.dataset.original,
-      text = this.dataset.figcaption;
-    webp.srcset= original + ".webp";
+    let original = this.dataset.original;
     jpeg.src = original;
-    figcaption.innerHTML = text;
     lightbox.classList.add('open');
     lightbox.classList.remove('close');
     Top.style.top = pageYOffset - 100 + "px";
@@ -39,6 +34,5 @@ function lbClose() {
   setTimeout("lbDelete();", 500);
 }
 function lbDelete() {
-  webp.srcset= "data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7";
   jpeg.src = "data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7";
 }

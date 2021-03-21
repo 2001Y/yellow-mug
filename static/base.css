@@ -672,13 +672,21 @@ footer span {
           backdrop-filter: blur(13px);
   z-index: 99;
   transition: 0.3s;
-  cursor: pointer;
+  cursor: zoom-out;
 }
 
 @supports (-webkit-touch-callout: none) {
   #lightbox {
     height: -webkit-fill-available;
   }
+}
+
+#lightbox:after {
+  content: "×";
+  font-size: 3rem;
+  position: fixed;
+  top: 0.3rem;
+  right: 1rem;
 }
 
 #lightbox img,

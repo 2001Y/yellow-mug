@@ -5,17 +5,17 @@
       {{ range $files -}}
          {{ $caption := .Name | replaceRE "\\..*" "" | humanize }}
          {{ $linkURL := print ($.Get "dir") "/" .Name | absURL }}
-         <picture data-original={{ .Name }}>
+         <picture data-original={{ $linkURL }}>
             <img src={{ $linkURL }} alt="{{ $caption }}" decoding=async loading=lazy>
          </picture>
       {{ end }}
    {{ end }}
 </section>
 
-<picture id=lightbox class=close onclick=lbClose()>
+<!-- <picture id=lightbox class=close onclick=lbClose()>
    <source type=image/webp alt=lightbox id=lightbox-webp>
    <img alt=lightbox id=lightbox-jpeg>
    <figcaption id=lightbox-figcaption></figcaption>
 </picture>
 <div id="Top"></div>
-<div id="Bottom"></div>
+<div id="Bottom"></div> -->
