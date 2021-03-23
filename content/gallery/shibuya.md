@@ -7,7 +7,7 @@ css: "gallery"
 js: "lb"
 ---
 
-ヨシキの中高の友人、上海蟹に所属する田中禎浩さんをカメラマンに朝から夜にかけて渋谷のスクランブル交差点を駆け巡り、撮影を行いました。
+ヨシキの中高の友人、[上海蟹](https://www.instagram.com/club_shanghai_crab/)に所属する田中禎浩さんをカメラマンに朝から夜にかけて渋谷のスクランブル交差点を駆け巡り、撮影を行いました。
 
 **Cameraman** 田中禎浩<br>
 **Location** 渋谷スクランブル交差点<small> Shibuya,Tokyo - Japan</small>
