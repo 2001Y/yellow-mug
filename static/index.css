@@ -529,4 +529,12 @@ svg {
   #sabTitle {
     font-size: 5vw;
   }
+
+  .iframe #sabTitle {
+    font-size: 2.5vw;
+  }
+
+  .iframe #yellowmugspanspan {
+    font-size: 7vw;
+  }
 }
