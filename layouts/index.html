@@ -32,6 +32,10 @@
     if(document.referrer.match(window.location.hostname)) {
       none()
     }
+    if(window !== window.parent) {
+      yellowmugspanspan.style.fontSize="7vw";
+      sabTitle.style.fontSize="2.5vw";
+    }
     function none() {
       document.body.classList.add('none');
     }
